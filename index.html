@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Desarrollo de Aplicaciones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuente formal -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .fuente-formal {
+      font-family: 'Merriweather', serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-gray-100 fuente-formal">
+
+  <!-- ENCABEZADO -->
+  <header class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md">
+    <h1 class="text-5xl font-bold text-center drop-shadow-lg">
+      Desarrollo de Aplicaciones
+    </h1>
+    <p class="text-center text-blue-100 text-2xl mt-2 tracking-wide">
+      Andres Melvin Lazaro Estrada
+    </p>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container mx-auto px-6 py-10">
+    <h2 class="text-3xl mb-6 text-center text-blue-300 font-bold">
+      Mis Trabajos por Semana
+    </h2>
+
+    <!-- COMBOBOX -->
+    <div class="flex justify-center mb-10">
+      <select id="selectorSemanas" class="bg-black text-white border border-blue-500 rounded px-4 py-2">
+        <option value="">-- Selecciona una semana --</option>
+        <option value="semanas/Semana 1.html">Semana 1</option>
+        <option value="semanas/Semana 2.html">Semana 2</option>
+        <option value="semanas/Semana 3.html">Semana 3</option>
+        <option value="semanas/Semana 4.html">Semana 4</option>
+        <option value="semanas/Semana 5.html">Semana 5</option>
+        <option value="semanas/Semana 6.html">Semana 6</option>
+        <option value="semanas/Semana 7.html">Semana 7</option>
+        <option value="semanas/Semana 8.html">Semana 8</option>
+        <option value="semanas/Semana 9.html">Semana 9</option>
+        <option value="semanas/Semana 10.html">Semana 10</option>
+        <option value="semanas/Semana 11.html">Semana 11</option>
+        <option value="semanas/Semana 12.html">Semana 12</option>
+        <option value="semanas/Semana 13.html">Semana 13</option>
+        <option value="semanas/Semana 14.html">Semana 14</option>
+        <option value="semanas/Semana 15.html">Semana 15</option>
+        <option value="semanas/Semana 16.html">Semana 16</option>
+      </select>
+    </div>
+
+    <!-- TARJETAS OPCIONALES -->
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <div class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md mt-10">
+    <h2 class="text-center text-2xl font-semibold mb-2">Información</h2>
+    <p class="text-center text-lg">Elaborado por: Andres Melvin Lazaro Estrada</p>
+    <p class="text-center text-lg">Universidad Peruana Los Andes (UPLA)</p>
+  </div>
+
+  <!-- SCRIPT PARA REDIRECCIÓN -->
+  <script>
+    const selector = document.getElementById('selectorSemanas');
+    selector.addEventListener('change', () => {
+      const url = selector.value;
+      if (url) window.location.href = url;
+    });
+  </script>
+
+</body>
+</html>
