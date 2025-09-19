@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Git y GitHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuente formal -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .fuente-formal { font-family: 'Merriweather', serif; }
+  </style>
+</head>
+<body class="bg-black text-gray-100 fuente-formal">
+
+  <!-- ENCABEZADO -->
+  <header class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Guía de Git y GitHub</h1>
+      <p class="mt-2 text-blue-100">Andres Melvin Lazaro Estrada</p>
+    </div>
+  </header>
+
+  <!-- CUERPO PRINCIPAL -->
+  <main class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Menú lateral fijo -->
+      <div class="col-span-1 space-y-4 sticky top-20 self-start">
+        <a href="index.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          🏠 Home
+        </a>
+        <a href="git-github.html" class="block bg-blue-900 border border-blue-600 p-4 rounded-lg shadow-md text-center font-bold">
+          💻 Git y GitHub
+        </a>
+        <a href="trabajos.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          📚 Trabajos
+        </a>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="col-span-3 bg-gray-900 border border-blue-600 rounded-lg p-8 shadow-md">
+
+        <!-- Qué es GitHub -->
+        <section class="mb-10">
+          <h2 class="text-3xl font-bold text-blue-300 mb-4">🌐 ¿Qué es GitHub?</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            GitHub es una plataforma en la nube que permite almacenar proyectos y gestionarlos con Git. 
+            Facilita el trabajo colaborativo, el control de versiones y la publicación de proyectos de software. 
+            Es esencial para compartir código con otros desarrolladores y trabajar en equipo de forma organizada.
+          </p>
+          <a href="https://github.com" target="_blank" class="block bg-blue-800 hover:bg-blue-700 text-center py-3 rounded-lg shadow-md font-semibold">
+            🌍 Ir a GitHub
+          </a>
+        </section>
+
+        <!-- Qué es Git -->
+        <section class="mb-10">
+          <h2 class="text-3xl font-bold text-blue-300 mb-4">⚙️ ¿Qué es Git?</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            Git es un sistema de control de versiones distribuido, creado por Linus Torvalds. 
+            Permite gestionar los cambios en el código fuente, trabajar en múltiples ramas y mantener 
+            un historial completo de modificaciones. Es la base que hace posible el funcionamiento de GitHub.
+          </p>
+          <a href="https://git-scm.com" target="_blank" class="block bg-blue-800 hover:bg-blue-700 text-center py-3 rounded-lg shadow-md font-semibold">
+            ⚡ Ir a Git
+          </a>
+        </section>
+
+        <!-- Caja de descarga de definiciones -->
+        <section class="mb-10">
+          <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">📥 Descargar resumen de Git y GitHub</h3>
+            <p class="mb-4">Un documento con las definiciones claras de qué es Git y qué es GitHub.</p>
+            <a href="archivos/GIT_HUB (1).pdf" download class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Descargar PDF
+            </a>
+          </div>
+        </section>
+
+        <!-- Guía rápida -->
+        <section class="mb-10">
+          <h2 class="text-3xl font-bold text-blue-300 mb-4">🚀 Guía rápida de inicio</h2>
+          <ul class="list-disc list-inside space-y-2 text-lg">
+            <li>Instalar Git en tu PC (<a href="https://git-scm.com/downloads" target="_blank" class="text-blue-400 underline">Descargar aquí</a>).</li>
+            <li>Configurar usuario: <code class="bg-gray-800 px-2 py-1 rounded">git config --global user.name "Tu Nombre"</code></li>
+            <li>Configurar email: <code class="bg-gray-800 px-2 py-1 rounded">git config --global user.email "tuemail@ejemplo.com"</code></li>
+            <li>Inicializar repositorio: <code class="bg-gray-800 px-2 py-1 rounded">git init</code></li>
+            <li>Agregar archivos: <code class="bg-gray-800 px-2 py-1 rounded">git add .</code></li>
+            <li>Guardar cambios: <code class="bg-gray-800 px-2 py-1 rounded">git commit -m "Primer commit"</code></li>
+            <li>Conectar a GitHub: <code class="bg-gray-800 px-2 py-1 rounded">git remote add origin URL</code></li>
+            <li>Subir código: <code class="bg-gray-800 px-2 py-1 rounded">git push -u origin main</code></li>
+          </ul>
+        </section>
+
+        <!-- Caja de descarga de manual completo -->
+        <section class="mb-10">
+          <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">📥 Descargar Manual completo de Git y GitHub</h3>
+            <p class="mb-4">Incluye instalación, configuración y comandos avanzados para dominar Git y GitHub.</p>
+            <a href="archivos/Instrucciones.pdf" download class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Descargar Manual
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-gradient-to-r from-blue-800 to-black text-white py-10 mt-10 shadow-md">
+    <div class="container mx-auto px-6 text-center">
+      <h4 class="text-2xl font-semibold mb-2">Información</h4>
+      <p class="text-lg">Elaborado por: Andres Melvin Lazaro Estrada</p>
+      <p class="text-lg">Universidad Peruana Los Andes (UPLA)</p>
+    </div>
+  </footer>
+
+</body>
+</html>

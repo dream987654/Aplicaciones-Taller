@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Semana 3 - Desarrollo de Aplicaciones</title>
+  <meta charset="UTF-8" />
+  <title>Semana 3 - Trabajos</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Fuente formal -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    .fuente-formal {
-      font-family: 'Merriweather', serif;
-    }
+    .fuente-formal { font-family: 'Merriweather', serif; }
   </style>
 </head>
 <body class="bg-black text-gray-100 fuente-formal">
 
   <!-- ENCABEZADO -->
   <header class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md">
-    <h1 class="text-5xl font-bold text-center drop-shadow-lg">
-      Desarrollo de Aplicaciones
-    </h1>
-    <p class="text-center text-blue-100 text-2xl mt-2 tracking-wide">
-      Andres Melvin Lazaro Estrada
-    </p>
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Semana 3</h1>
+      <p class="mt-2 text-blue-100">Andres Melvin Lazaro Estrada</p>
+    </div>
   </header>
 
-  <!-- CONTENIDO -->
-  <main class="container mx-auto px-6 py-10">
-    <h2 class="text-3xl mb-6 text-center text-blue-300 font-bold">Semana 3</h2>
-    <p class="text-lg text-center text-gray-300 mb-6">
-      Aquí va el contenido de la Semana 1 (resúmenes, trabajos, prácticas, etc.)
-    </p>
+  <!-- CUERPO PRINCIPAL -->
+  <main class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 
-    <!-- Botón de regreso -->
-    <div class="text-center">
-      <a href="../index.html" class="bg-blue-700 hover:bg-blue-900 text-white px-6 py-3 rounded-lg shadow-md">
-        ⬅ Volver al Inicio
-      </a>
+      <!-- Menú lateral fijo -->
+      <div class="col-span-1 space-y-4 sticky top-20 self-start">
+        <a href="../index.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          🏠 Home
+        </a>
+        <a href="../git-github.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          💻 Git y GitHub
+        </a>
+        <a href="../trabajos.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          📚 Trabajos
+        </a>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="col-span-3 bg-gray-900 border border-blue-600 rounded-lg p-8 shadow-md">
+
+        <!-- Enunciado general -->
+        <div class="mb-8 text-center">
+          <a href="../archivos/Semana03_Actividad_2025.pdf" download class="block bg-green-700 hover:bg-green-600 text-white px-6 py-3 rounded-lg shadow-md font-semibold">
+            📄 Descargar Enunciado de Ejercicios
+          </a>
+        </div>
+
+        <!-- Ejercicio 1 -->
+        <section class="mb-10">
+          <h2 class="text-2xl font-bold text-blue-300 mb-4">Ejercicio 1</h2>
+          <p class="mb-4 text-justify">
+            Descripción breve del Ejercicio 1 desarrollado en esta semana. Aquí puedes explicar de qué trata o qué se resolvió.
+          </p>
+          <a href="https://github.com/TU_USUARIO/repositorio-ejercicio1-semana3" target="_blank"
+             class="block bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md text-center font-semibold">
+            🔗 Ver Ejercicio 1 en GitHub
+          </a>
+        </section>
+
+        <!-- Ejercicio 2 -->
+        <section class="mb-10">
+          <h2 class="text-2xl font-bold text-blue-300 mb-4">Ejercicio 2</h2>
+          <p class="mb-4 text-justify">
+            Descripción breve del Ejercicio 2 desarrollado en esta semana. Aquí puedes explicar de qué trata o qué se resolvió.
+          </p>
+          <a href="https://github.com/TU_USUARIO/repositorio-ejercicio2-semana3" target="_blank"
+             class="block bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md text-center font-semibold">
+            🔗 Ver Ejercicio 2 en GitHub
+          </a>
+        </section>
+
+        <!-- Descarga general -->
+        <div class="mt-12 text-center">
+          <a href="../archivos/Actividad semana03.rar" download class="block bg-purple-700 hover:bg-purple-600 text-white px-6 py-3 rounded-lg shadow-md font-semibold">
+            📦 Descargar todos los ejercicios (RAR)
+          </a>
+        </div>
+
+      </div>
     </div>
   </main>
 
   <!-- PIE DE PÁGINA -->
-  <div class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md mt-10">
-    <h2 class="text-center text-2xl font-semibold mb-2">Información</h2>
-    <p class="text-center text-lg">Elaborado por: Andres Melvin Lazaro Estrada</p>
-    <p class="text-center text-lg">Universidad Peruana Los Andes (UPLA)</p>
-  </div>
+  <footer class="bg-gradient-to-r from-blue-800 to-black text-white py-10 mt-10 shadow-md">
+    <div class="container mx-auto px-6 text-center">
+      <h4 class="text-2xl font-semibold mb-2">Información</h4>
+      <p class="text-lg">Elaborado por: Andres Melvin Lazaro Estrada</p>
+      <p class="text-lg">Universidad Peruana Los Andes (UPLA)</p>
+    </div>
+  </footer>
 
 </body>
 </html>

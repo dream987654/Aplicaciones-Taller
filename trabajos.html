@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabajos Semanales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuente formal -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .fuente-formal { font-family: 'Merriweather', serif; }
+  </style>
+</head>
+<body class="bg-black text-gray-100 fuente-formal">
+
+  <!-- ENCABEZADO -->
+  <header class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Trabajos Semanales</h1>
+      <p class="mt-2 text-blue-100">Andres Melvin Lazaro Estrada</p>
+    </div>
+  </header>
+
+  <!-- CUERPO PRINCIPAL -->
+  <main class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Menú lateral fijo -->
+      <div class="col-span-1 space-y-4 sticky top-20 self-start">
+        <a href="index.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          🏠 Home
+        </a>
+        <a href="git-github.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          💻 Git y GitHub
+        </a>
+        <a href="trabajos.html" class="block bg-blue-900 border border-blue-600 p-4 rounded-lg shadow-md text-center font-bold">
+          📚 Trabajos
+        </a>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="col-span-3 bg-gray-900 border border-blue-600 rounded-lg p-8 shadow-md">
+
+        <!-- Contador de progreso -->
+        <h2 class="text-2xl font-bold text-blue-300 mb-4 text-center">📈 Progreso del curso</h2>
+        <div class="w-full bg-gray-700 rounded-full h-6 mb-2 overflow-hidden">
+          <div id="progressBar" class="bg-blue-600 h-6 text-center text-xs font-bold leading-6 text-white" style="width: 0%">0%</div>
+        </div>
+        <p id="progressText" class="text-center text-gray-300 mb-8">0 de 16 semanas completadas</p>
+
+        <!-- Grid de semanas -->
+        <h2 class="text-3xl font-bold text-blue-300 mb-8 text-center">📚 Mis 16 semanas de trabajos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="semanas/Semana 1.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 1</a>
+          <a href="semanas/Semana 2.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 2</a>
+          <a href="semanas/Semana 3.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 3</a>
+          <a href="semanas/semana4.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 4</a>
+          <a href="semanas/semana5.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 5</a>
+          <a href="semanas/semana6.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 6</a>
+          <a href="semanas/semana7.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 7</a>
+          <a href="semanas/semana8.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 8</a>
+          <a href="semanas/semana9.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 9</a>
+          <a href="semanas/semana10.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 10</a>
+          <a href="semanas/semana11.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 11</a>
+          <a href="semanas/semana12.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 12</a>
+          <a href="semanas/semana13.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 13</a>
+          <a href="semanas/semana14.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 14</a>
+          <a href="semanas/semana15.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 15</a>
+          <a href="semanas/semana16.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 16</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-gradient-to-r from-blue-800 to-black text-white py-10 mt-10 shadow-md">
+    <div class="container mx-auto px-6 text-center">
+      <h4 class="text-2xl font-semibold mb-2">Información</h4>
+      <p class="text-lg">Elaborado por: Andres Melvin Lazaro Estrada</p>
+      <p class="text-lg">Universidad Peruana Los Andes (UPLA)</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT PROGRESO -->
+  <script>
+    // 🔥 Número de semanas completadas
+    let semanasCompletadas = 2; // cámbialo según tu avance
+    let totalSemanas = 16;
+
+    let porcentaje = (semanasCompletadas / totalSemanas) * 100;
+
+    document.getElementById("progressBar").style.width = porcentaje + "%";
+    document.getElementById("progressBar").textContent = Math.round(porcentaje) + "%";
+    document.getElementById("progressText").textContent = semanasCompletadas + " de " + totalSemanas + " semanas completadas";
+  </script>
+
+</body>
+</html>
