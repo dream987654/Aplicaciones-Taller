@@ -1,0 +1,18 @@
+Actividad 02
+Una empresa de transportes cubre la ruta Lima – Huancayo en dos turnos: mañana y noche. Los
+precios de los pasajes se dan en la siguiente tabla:
+Turno Precio del pasaje
+Mañana S/. 37.5
+Noche S/. 37.5
+Como oferta especial, la empresa aplica un porcentaje de descuento sobre el importe de la
+compra de acuerdo con a la siguiente tabla:
+Cantidad de pasajes Descuento
+≥ 15 8%
+< 15 5%
+Adicionalmente, la empresa obsequia caramelos de acuerdo con la siguiente tabla.
+Importe por pagar Descuento
+> 200 2 por cada boleto
+≤ 200 0
+Dado el turno y la cantidad de pasajes adquiridos por un cliente, diseñe un programa que
+determine el importe de la compra, el importe del descuento, el importe a pagar y la cantidad de
+caramelos de obsequio.

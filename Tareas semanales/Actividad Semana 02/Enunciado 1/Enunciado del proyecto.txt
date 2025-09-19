@@ -1,0 +1,13 @@
+Actividad 01
+Una tienda ha puesto en oferta la venta de un producto ofreciendo un porcentaje de descuento
+sobre el importe de la compra de acuerdo con la siguiente tabla:
+Docenas adquiridas Descuento
+≥ 10 20%
+< 10 10%
+Adicionalmente, la tienda obsequia lapiceros de acuerdo con a la siguiente tabla:
+Importe a pagar Lapiceros
+≥ 200 2 por cada docena
+< 200 0
+Dado el precio de la docena y la cantidad de docenas adquiridas, diseñe un programa que
+determine el importe de la compra, el importe del descuento, el importe a pagar y la cantidad de
+lapiceros de obsequio.

@@ -1,0 +1,77 @@
+package Vista;
+
+import Modelo.Compra;
+import java.awt.Color;
+import java.awt.Dimension;
+import javax.swing.JOptionPane;
+
+public class Actividad01 extends javax.swing.JFrame {
+
+    public Actividad01() {
+        initComponents();
+        formulario();
+    }
+
+    private void formulario() {
+        this.setTitle("Cálculo de Compra (POO)");
+        this.setLocationRelativeTo(this);
+        this.setResizable(false);
+        this.getContentPane().setBackground(new Color(255, 255, 255));
+        this.setSize(new Dimension(500, 400));
+        this.txtPrecio.requestFocus();
+    }
+
+    @SuppressWarnings("unchecked")
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        try {
+            double precio = Double.parseDouble(txtPrecio.getText().trim());
+            int cantidad = Integer.parseInt(txtCantidad.getText().trim());
+
+            if (precio > 0 && cantidad > 0) {
+                // Crear objeto de la clase Compra
+                Compra compra = new Compra(precio, cantidad);
+
+                // Mostrar resultados
+                txtSalida.setText("\tResultados de la Compra");
+                txtSalida.append("\n---------------------------------");
+                txtSalida.append("\nImporte de la compra: S/ " + compra.calcularImporteCompra());
+                txtSalida.append("\nDescuento: S/ " + compra.calcularDescuento());
+                txtSalida.append("\nImporte a pagar: S/ " + compra.calcularImportePagar());
+                txtSalida.append("\nLapiceros de obsequio: " + compra.calcularLapiceros());
+
+            } else {
+                JOptionPane.showMessageDialog(this, "Ingrese valores válidos.");
+            }
+
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Datos inválidos, intente nuevamente.");
+        }
+    }                                           
+
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        txtPrecio.setText("");
+        txtCantidad.setText("");
+        txtSalida.setText("");
+        txtPrecio.requestFocus();
+    }                                        
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        System.exit(0);
+    }                                        
+
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Actividad01().setVisible(true);
+            }
+        });
+    }
+
+    // Variables (deben estar en el JFrameForm en NetBeans)
+    private javax.swing.JButton btnCalcular;
+    private javax.swing.JButton btnNuevo;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JTextField txtPrecio;
+    private javax.swing.JTextField txtCantidad;
+    private javax.swing.JTextArea txtSalida;
+}

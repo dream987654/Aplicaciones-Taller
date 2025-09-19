@@ -1,0 +1,19 @@
+Actividad 02
+El sueldo bruto de los empleados de una empresa se calcula sumando el sueldo básico más la
+bonificación por hijos.
+El sueldo básico se calcula multiplicando las horas trabajadas por la tarifa horaria. La tarifa horaria
+depende de la categoría del empleado de acuerdo con la siguiente tabla:
+Categoría Tarifa horaria (S/.)
+A 45.0
+B 37.5
+La bonificación por hijos se calcula de acuerdo con la siguiente tabla:
+Número de hijos Bonificación
+Hasta 3 S/. 40.5 por cada hijo
+Más de 3 S/. 35.0 por cada hijo
+Por ley, todo empleado está sujeto a un porcentaje de descuento sobre el sueldo bruto de acuerdo
+con la siguiente tabla:
+Sueldo bruto (S/.) Descuento
+≥ 3500 13.5%
+< 3500 10.0%
+Dadas la categoría y la cantidad de horas trabajadas de un empleado, diseñe un programa que
+determine el sueldo básico, el sueldo bruto, el descuento y el sueldo neto que le corresponden

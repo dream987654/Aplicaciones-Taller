@@ -1,0 +1,106 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import javax.swing.JOptionPane;
+
+public class Actividad02 extends javax.swing.JFrame {
+
+    public Actividad02() {
+        initComponents();
+        formulario();
+    }
+
+    private void formulario() {
+        this.setTitle("Cálculo de Sueldo de Empleados");
+        this.setLocationRelativeTo(this);
+        this.setResizable(false);
+        this.getContentPane().setBackground(new Color(255, 255, 255));
+        this.setSize(new Dimension(500, 400));
+        this.txtHoras.requestFocus();
+    }
+
+    @SuppressWarnings("unchecked")
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        try {
+            String categoria = cmbCategoria.getSelectedItem().toString();
+            int horas = Integer.parseInt(txtHoras.getText().trim());
+            int hijos = Integer.parseInt(txtHijos.getText().trim());
+
+            if (horas > 0 && hijos >= 0) {
+
+                // Tarifa según categoría
+                double tarifa = (categoria.equals("A")) ? 45.0 : 37.5;
+
+                // Sueldo básico
+                double sueldoBasico = horas * tarifa;
+
+                // Bonificación
+                double bonificacion;
+                if (hijos <= 3) {
+                    bonificacion = hijos * 40.5;
+                } else {
+                    bonificacion = hijos * 35.0;
+                }
+
+                // Sueldo bruto
+                double sueldoBruto = sueldoBasico + bonificacion;
+
+                // Descuento
+                double descuento;
+                if (sueldoBruto >= 3500) {
+                    descuento = sueldoBruto * 0.135;
+                } else {
+                    descuento = sueldoBruto * 0.10;
+                }
+
+                // Sueldo neto
+                double sueldoNeto = sueldoBruto - descuento;
+
+                // Salida
+                txtSalida.setText("\tResultados del Empleado");
+                txtSalida.append("\n---------------------------------");
+                txtSalida.append("\nCategoría: " + categoria);
+                txtSalida.append("\nHoras trabajadas: " + horas);
+                txtSalida.append("\nTarifa horaria: S/ " + tarifa);
+                txtSalida.append("\nSueldo básico: S/ " + sueldoBasico);
+                txtSalida.append("\nBonificación por hijos: S/ " + bonificacion);
+                txtSalida.append("\nSueldo bruto: S/ " + sueldoBruto);
+                txtSalida.append("\nDescuento: S/ " + descuento);
+                txtSalida.append("\nSueldo neto: S/ " + sueldoNeto);
+
+            } else {
+                JOptionPane.showMessageDialog(this, "Ingrese valores válidos.");
+            }
+
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Datos inválidos, intente de nuevo.");
+        }
+    }                                           
+
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        txtHoras.setText("");
+        txtHijos.setText("");
+        txtSalida.setText("");
+        txtHoras.requestFocus();
+    }                                        
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        System.exit(0);
+    }                                        
+
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Actividad02().setVisible(true);
+            }
+        });
+    }
+
+    // Variables de interfaz gráfica
+    private javax.swing.JButton btnCalcular;
+    private javax.swing.JButton btnNuevo;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JComboBox<String> cmbCategoria;
+    private javax.swing.JTextField txtHoras;
+    private javax.swing.JTextField txtHijos;
+    private javax.swing.JTextArea txtSalida;
+}

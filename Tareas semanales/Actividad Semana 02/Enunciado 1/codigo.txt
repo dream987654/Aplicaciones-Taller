@@ -1,0 +1,101 @@
+package Vista;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import javax.swing.JOptionPane;
+
+public class Actividad01 extends javax.swing.JFrame {
+
+    public Actividad01() {
+        initComponents();
+        formulario();
+    }
+
+    private void formulario() {
+        this.setTitle("Actividad 01 - Descuentos y Lapiceros");
+        this.setLocationRelativeTo(this);
+        this.setResizable(false);
+        this.getContentPane().setBackground(new Color(255, 255, 255));
+        this.setSize(new Dimension(450, 350));
+        this.txtPrecio.requestFocus();
+    }
+
+    // BOTÓN CALCULAR
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {
+        try {
+            double precio = Double.parseDouble(txtPrecio.getText().trim());
+            int docenas = Integer.parseInt(txtCantidad.getText().trim());
+
+            if (precio > 0 && docenas > 0) {
+                double importeCompra = precio * docenas;
+                double descuento;
+
+                if (docenas >= 10) {
+                    descuento = 0.20 * importeCompra;
+                } else {
+                    descuento = 0.10 * importeCompra;
+                }
+
+                double importePagar = importeCompra - descuento;
+
+                int lapiceros;
+                if (importePagar >= 200) {
+                    lapiceros = 2 * docenas;
+                } else {
+                    lapiceros = 0;
+                }
+
+                // Mostrar resultados en el JTextArea
+                txtSalida.setText("\tResultados");
+                txtSalida.append("\n------------------------------------");
+                txtSalida.append("\nImporte de compra: S/ " + String.format("%.2f", importeCompra));
+                txtSalida.append("\nDescuento aplicado: S/ " + String.format("%.2f", descuento));
+                txtSalida.append("\nImporte a pagar: S/ " + String.format("%.2f", importePagar));
+                txtSalida.append("\nLapiceros de obsequio: " + lapiceros);
+
+            } else {
+                JOptionPane.showMessageDialog(this, "Ingrese valores mayores a CERO");
+                txtPrecio.requestFocus();
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Datos inválidos, intente nuevamente.");
+        }
+    }
+
+    // BOTÓN NUEVO
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {
+        txtPrecio.setText("");
+        txtCantidad.setText("");
+        txtSalida.setText("");
+        txtPrecio.requestFocus();
+    }
+
+    // BOTÓN SALIR
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {
+        System.exit(0);
+    }
+
+    // VALIDACIÓN DEL TEXTO EN CAMPOS
+    private void txtPrecioKeyTyped(java.awt.event.KeyEvent evt) {
+        char c = evt.getKeyChar();
+        if (!Character.isDigit(c) && c != '.') {
+            evt.consume();
+        }
+    }
+
+    private void txtCantidadKeyTyped(java.awt.event.KeyEvent evt) {
+        char c = evt.getKeyChar();
+        if (!Character.isDigit(c)) {
+            evt.consume();
+        }
+    }
+
+    // MAIN
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Actividad01().setVisible(true);
+            }
+        });
+    }
+}
