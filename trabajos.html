@@ -14,12 +14,22 @@
 <body class="bg-black text-gray-100 fuente-formal">
 
   <!-- ENCABEZADO -->
-  <header class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md">
-    <div class="container mx-auto px-6 text-center">
+  <header class="bg-gradient-to-r from-blue-500 to-black text-white py-6 shadow-md">
+  <div class="container mx-auto px-1 flex items-center justify-between">
+    
+    <!-- Imagen lateral izquierda -->
+    <img src="Imagenes/upla.png" 
+         alt="Banner Semana" 
+         class="w-90 h-32 object-cover rounded-lg shadow-md">
+    
+    <!-- Texto centrado -->
+    <div class="flex-1 text-center">
       <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Trabajos Semanales</h1>
-      <p class="mt-2 text-blue-100">Andres Melvin Lazaro Estrada</p>
+      <p class="mt-2 text-blue-100 text-lg">Andres Melvin Lazaro Estrada</p>
     </div>
-  </header>
+    
+  </div>
+</header>
 
   <!-- CUERPO PRINCIPAL -->
   <main class="container mx-auto px-6 py-16">
@@ -54,7 +64,7 @@
           <a href="semanas/Semana 1.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 1</a>
           <a href="semanas/Semana 2.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 2</a>
           <a href="semanas/Semana 3.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 3</a>
-          <a href="semanas/semana4.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 4</a>
+          <a href="semanas/Semana 4.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 4</a>
           <a href="semanas/semana5.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 5</a>
           <a href="semanas/semana6.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 6</a>
           <a href="semanas/semana7.html" class="block bg-blue-900 hover:bg-blue-700 p-6 rounded-lg shadow-md text-center font-semibold text-white">Semana 7</a>
@@ -84,7 +94,7 @@
   <!-- SCRIPT PROGRESO -->
   <script>
     // 🔥 Número de semanas completadas
-    let semanasCompletadas = 3; // cámbialo según tu avance
+    let semanasCompletadas = 4; // cámbialo según tu avance
     let totalSemanas = 16;
 
     let porcentaje = (semanasCompletadas / totalSemanas) * 100;
