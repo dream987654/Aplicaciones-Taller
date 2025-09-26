@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Semana 3 - Trabajos</title>
+  <title>Semana 2 - Desarrollo de Aplicaciones</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Fuente formal -->
@@ -14,13 +14,22 @@
 <body class="bg-black text-gray-100 fuente-formal">
 
   <!-- ENCABEZADO -->
-  <header class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md">
-    <div class="container mx-auto px-6 text-center">
+  <header class="bg-gradient-to-r from-blue-500 to-black text-white py-6 shadow-md">
+  <div class="container mx-auto px-1 flex items-center justify-between">
+    
+    <!-- Imagen lateral izquierda -->
+    <img src="../Imagenes/upla.png" 
+         alt="Banner Semana" 
+         class="w-90 h-32 object-cover rounded-lg shadow-md">
+    
+    <!-- Texto centrado -->
+    <div class="flex-1 text-center">
       <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Semana 3</h1>
-      <p class="mt-2 text-blue-100">Andres Melvin Lazaro Estrada</p>
+      <p class="mt-2 text-blue-100 text-lg">Andres Melvin Lazaro Estrada</p>
     </div>
-  </header>
-
+    
+  </div>
+</header>
   <!-- CUERPO PRINCIPAL -->
   <main class="container mx-auto px-6 py-16">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -39,43 +48,53 @@
       </div>
 
       <!-- Contenido principal -->
-      <div class="col-span-3 bg-gray-900 border border-blue-600 rounded-lg p-8 shadow-md">
+      <div class="col-span-3 bg-gray-900 border border-blue-600 rounded-lg p-8 shadow-md space-y-10">
 
-        <!-- Enunciado general -->
-        <div class="mb-8 text-center">
-          <a href="../archivos/Semana03_Actividad_2025.pdf" download class="block bg-green-700 hover:bg-green-600 text-white px-6 py-3 rounded-lg shadow-md font-semibold">
-            📄 Descargar Enunciado de Ejercicios
+        <!-- Caja única de enunciado -->
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl font-bold mb-2">📥 Descargar Enunciado de Ejercicios</h3>
+          <a href="../archivos/Semana03_Actividad_2025.pdf" download class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+            Descargar PDF
           </a>
         </div>
 
         <!-- Ejercicio 1 -->
-        <section class="mb-10">
-          <h2 class="text-2xl font-bold text-blue-300 mb-4">Ejercicio 1</h2>
-          <p class="mb-4 text-justify">
-            Descripción breve del Ejercicio 1 desarrollado en esta semana. Aquí puedes explicar de qué trata o qué se resolvió.
+        <section>
+          <h2 class="text-2xl font-bold text-blue-300 mb-4">📘 Ejercicio 1</h2>
+          <p class="mb-4">
+            Este ejercicio corresponde a la primera práctica de la semana 3.
           </p>
-          <a href="https://github.com/dream987654/semana_1/tree/main/Tareas%20semanales/Actividad%20Semana%2003/Enunciado%201" target="_blank"
-             class="block bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md text-center font-semibold">
-            🔗 Ver Ejercicio 1 en GitHub
-          </a>
+
+          <!-- Caja GitHub -->
+          <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">🌍 Repositorio en GitHub</h3>
+            <a href="https://github.com/dream987654/semana_1/tree/main/Tareas%20semanales/Actividad%20Semana%2003/Enunciado%201" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Ver en GitHub
+            </a>
+          </div>
         </section>
 
         <!-- Ejercicio 2 -->
-        <section class="mb-10">
-          <h2 class="text-2xl font-bold text-blue-300 mb-4">Ejercicio 2</h2>
-          <p class="mb-4 text-justify">
-            Descripción breve del Ejercicio 2 desarrollado en esta semana. Aquí puedes explicar de qué trata o qué se resolvió.
+        <section>
+          <h2 class="text-2xl font-bold text-blue-300 mb-4">📘 Ejercicio 2</h2>
+          <p class="mb-4">
+            Este ejercicio corresponde a la segunda práctica de la semana 3.
           </p>
-          <a href="https://github.com/dream987654/semana_1/tree/main/Tareas%20semanales/Actividad%20Semana%2003/Enunciado%202" target="_blank"
-             class="block bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md text-center font-semibold">
-            🔗 Ver Ejercicio 2 en GitHub
-          </a>
+
+          <!-- Caja GitHub -->
+          <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">🌍 Repositorio en GitHub</h3>
+            <a href="https://github.com/dream987654/semana_1/tree/main/Tareas%20semanales/Actividad%20Semana%2003/Enunciado%202" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Ver en GitHub
+            </a>
+          </div>
         </section>
 
-        <!-- Descarga general -->
-        <div class="mt-12 text-center">
-          <a href="../archivos/Actividad semana03.rar" download class="block bg-purple-700 hover:bg-purple-600 text-white px-6 py-3 rounded-lg shadow-md font-semibold">
-            📦 Descargar todos los ejercicios (RAR)
+        <!-- Caja final de descarga RAR -->
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center mt-10">
+          <h3 class="text-xl font-bold mb-2">📦 Descargar Todos los Ejercicios (RAR)</h3>
+          <a href="../archivos/Actividad semana03.rar" download class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+            Descargar RAR
           </a>
         </div>
 
