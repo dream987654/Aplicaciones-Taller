@@ -1,0 +1,5 @@
+primera actividad:
+modificar el ultimo archivo o ejemplo para que se pueda calcular el area y perimetro de 3 figuras geometricas,adicione una imagen de las figuras geometricas 
+segunda actividad 
+crear una aplicacion para guardar : una ventana login(uno o dos roles) que permita validar uno o mas usuarios en roles diferentes, el alumno o docente :::  SEGUNDA VENTANA :
+que permita calcular las 4 conversiones de unidades de medida (metro,centrimetro,milimetro,etc),,(cada rol tiene q tener su propia vista por ejemplo el estudiante solo puede ver las conversiones y el prof puede cambiar las conversiones y hacerlas ) 
