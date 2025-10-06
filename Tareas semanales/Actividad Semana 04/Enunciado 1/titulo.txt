@@ -1,0 +1,1 @@
+modificar el ultimo archivo o ejemplo para que se pueda calcular el area y perimetro de 3 figuras geometricas,adicione una imagen de las figuras geometricas 
