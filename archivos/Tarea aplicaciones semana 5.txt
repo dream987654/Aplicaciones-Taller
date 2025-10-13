@@ -1,0 +1,3 @@
+Se tiene que diseñar un Login (FrontEnd) de un proyecto que tenga que resolver un problema. 
+Diseñar las vistas que debe tener el Login. 
+Agregar labels, textFields o lo que el alumno considere para resolver el problema.
