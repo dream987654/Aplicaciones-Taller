@@ -1,0 +1,37 @@
+Table usuarios {
+  id integer [pk, increment]
+  usuario text [unique]
+  clave text
+  rol text
+}
+
+Table psicologos {
+  id_psicologo integer [pk, increment]
+  nombre text
+  apellido text
+  especialidad text
+  celular text
+  correo text
+  id_usuario integer [ref: > usuarios.id]
+}
+
+Table pacientes {
+  id_paciente integer [pk, increment]
+  nombre text
+  apellido text
+  edad integer
+  genero text
+  celular text
+  correo text
+  id_usuario integer [ref: > usuarios.id]
+}
+
+Table citas {
+  id_cita integer [pk, increment]
+  id_paciente integer [ref: > pacientes.id_paciente]
+  id_psicologo integer [ref: > psicologos.id_psicologo]
+  fecha text
+  hora text
+  descripcion text
+  estado text
+}
