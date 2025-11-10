@@ -1,0 +1,14 @@
+el estudiante suba sus tesis poara q sea evaluado, vienen los docentes otro rol y evalua, y otro un admistriador que puede moficar o crear nuevos roles 
+
+
+1 el login y
+2 como seria el entorno como van a entrar los usuarios 
+
+buscar 4 librerias o framekor para el trabajo de css
+
+todo en cuestion a una tesis
+
+
+FIGMA para trabajar la pagina o mockup
+
+primero el diseño 
