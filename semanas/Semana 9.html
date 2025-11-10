@@ -1,51 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Semana 9 - Desarrollo de Aplicaciones</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Fuente formal -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    .fuente-formal {
-      font-family: 'Merriweather', serif;
-    }
+    .fuente-formal { font-family: 'Merriweather', serif; }
   </style>
 </head>
 <body class="bg-black text-gray-100 fuente-formal">
 
   <!-- ENCABEZADO -->
-  <header class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md">
-    <h1 class="text-5xl font-bold text-center drop-shadow-lg">
-      Desarrollo de Aplicaciones
-    </h1>
-    <p class="text-center text-blue-100 text-2xl mt-2 tracking-wide">
-      Andres Melvin Lazaro Estrada
-    </p>
-  </header>
+  <header class="bg-gradient-to-r from-blue-500 to-black text-white py-6 shadow-md">
+  <div class="container mx-auto px-1 flex items-center justify-between">
+    
+    <!-- Imagen lateral izquierda -->
+    <img src="../Imagenes/upla.png" 
+         alt="Banner Semana" 
+         class="w-90 h-32 object-cover rounded-lg shadow-md">
+    
+    <!-- Texto centrado -->
+    <div class="flex-1 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Semana 9</h1>
+      <p class="mt-2 text-blue-100 text-lg">Andres Melvin Lazaro Estrada</p>
+    </div>
+    
+  </div>
+</header>
 
-  <!-- CONTENIDO -->
-  <main class="container mx-auto px-6 py-10">
-    <h2 class="text-3xl mb-6 text-center text-blue-300 font-bold">Semana 9</h2>
-    <p class="text-lg text-center text-gray-300 mb-6">
-      Aquí va el contenido de la Semana 1 (resúmenes, trabajos, prácticas, etc.)
-    </p>
+  <!-- CUERPO PRINCIPAL -->
+  <main class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 
-    <!-- Botón de regreso -->
-    <div class="text-center">
-      <a href="../index.html" class="bg-blue-700 hover:bg-blue-900 text-white px-6 py-3 rounded-lg shadow-md">
-        ⬅ Volver al Inicio
-      </a>
+      <!-- Menú lateral fijo -->
+      <div class="col-span-1 space-y-4 sticky top-20 self-start">
+        <a href="../index.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          🏠 Home
+        </a>
+        <a href="../git-github.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          💻 Git y GitHub
+        </a>
+        <a href="../trabajos.html" class="block bg-gray-900 hover:bg-gray-800 border border-blue-600 p-4 rounded-lg shadow-md text-center">
+          📚 Trabajos
+        </a>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="col-span-3 bg-gray-900 border border-blue-600 rounded-lg p-8 shadow-md space-y-10">
+
+        <!-- Caja única de enunciado -->
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl font-bold mb-2">📥 Descargar Enunciado de la tarea encomendada</h3>
+          <a href="../archivos/tarea aplicaciones semana 9.txt" download class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+            Descargar PDF
+          </a>
+        </div>
+
+        <!-- Ejercicio 1 -->
+        <section>
+          <h2 class="text-2xl font-bold text-blue-300 mb-4">📘 Ejercicio 1</h2>
+          <p class="mb-4">
+            Aqui podremos ver los pantallasos de como sera nuestra aplicacion y las librerias para el css.
+          </p>
+
+          <!-- Caja GitHub -->
+          <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">🌍 Repositorio en GitHub</h3>
+            <a href="https://github.com/dream987654/Aplicaciones-Taller/tree/main/Tareas%20semanales/Actividad%20Semana%2009" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Ver en GitHub
+            </a>
+          </div>
+        </section>
+
+        <!-- Caja final de descarga RAR -->
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">📦 Libreria del css (BootStrap)</h3>
+            <a href="https://getbootstrap.com/" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Ver Libreria
+            </a>
+          </div>
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">📦 Libreria del css (tailwindcss)</h3>
+            <a href="https://tailwindcss.com/" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Ver Libreria
+            </a>
+        </div>
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">📦 Libreria del css (Bulma)</h3>
+            <a href="https://bulma.io/" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Ver Libreria
+            </a>
+        </div>
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-bold mb-2">📦 Libreria del css (Foundation)</h3>
+            <a href="https://get.foundation/" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+              Ver Libreria 
+            </a>
+        </div>
+        <!-- Caja final de descarga RAR -->
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 p-6 rounded-lg shadow-lg text-center mt-10">
+          <h3 class="text-xl font-bold mb-2">📦 Descargar el avanze del proyecto (RAR)</h3>
+          <a href="../archivos/Tarea aplicaciones semana 9.rar" download class="bg-white text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
+            Descargar RAR
+          </a>
+        </div>
+
+      </div>
     </div>
   </main>
 
   <!-- PIE DE PÁGINA -->
-  <div class="bg-gradient-to-r from-blue-800 to-black text-white py-10 shadow-md mt-10">
-    <h2 class="text-center text-2xl font-semibold mb-2">Información</h2>
-    <p class="text-center text-lg">Elaborado por: Andres Melvin Lazaro Estrada</p>
-    <p class="text-center text-lg">Universidad Peruana Los Andes (UPLA)</p>
-  </div>
+  <footer class="bg-gradient-to-r from-blue-800 to-black text-white py-10 mt-10 shadow-md">
+    <div class="container mx-auto px-6 text-center">
+      <h4 class="text-2xl font-semibold mb-2">Información</h4>
+      <p class="text-lg">Elaborado por: Andres Melvin Lazaro Estrada</p>
+      <p class="text-lg">Universidad Peruana Los Andes (UPLA)</p>
+    </div>
+  </footer>
 
 </body>
 </html>
