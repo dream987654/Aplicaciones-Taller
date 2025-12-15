@@ -1,0 +1,11 @@
+Controladores\AdminServlet.class
+Controladores\LoginServlet.class
+Datos\Conexion.class
+Datos\TestConexion.class
+Modelo\Usuario.class
+Datos\TesisDAO.class
+com\mycompany\mavenproject8\resources\JakartaEE11Resource.class
+Modelo\Tesis.class
+com\mycompany\mavenproject8\JakartaRestConfiguration.class
+Controladores\CalificarServlet.class
+Datos\UsuarioDAO.class
