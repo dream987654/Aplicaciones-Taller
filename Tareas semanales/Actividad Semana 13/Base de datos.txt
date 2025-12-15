@@ -1,0 +1,79 @@
+DROP DATABASE IF EXISTS proyecto_final_db;
+CREATE DATABASE proyecto_final_db;
+USE proyecto_final_db;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(50),
+    rol VARCHAR(20) -- 'admin', 'profe', 'alumno'
+);
+
+INSERT INTO usuarios (nombre, email, password, rol) VALUES 
+('Director', 'admin@test.com', '123', 'admin'),
+('Profesor Juan', 'profe@test.com', '123', 'profe'),
+('Alumno Pepito', 'alumno@test.com', '123', 'alumno');
+
+SELECT * FROM usuarios;
+
+CREATE TABLE tesis (
+    id_tesis INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(200) NOT NULL,
+    id_alumno INT NOT NULL,     -- Quién la hizo
+    id_jurado INT DEFAULT NULL, -- Quién la revisa (Docente)
+    nota INT DEFAULT 0,         -- Nota (0-20)
+    estado VARCHAR(50) DEFAULT 'Pendiente', -- 'Pendiente', 'Calificado'
+    FOREIGN KEY (id_alumno) REFERENCES usuarios(id),
+    FOREIGN KEY (id_jurado) REFERENCES usuarios(id)
+);
+
+-- Insertamos una tesis de prueba vinculada al Alumno Pepito (ID 3)
+-- Y asignada al Profesor Juan (ID 2) para que tenga algo que calificar.
+INSERT INTO tesis (titulo, id_alumno, id_jurado, estado) VALUES 
+('Implementación de IA en Almacenes', 3, 2, 'Pendiente');
+
+select * from tesis
+
+
+
+-- 1. LIMPIEZA (Opcional: borra datos viejos para empezar limpio)
+
+
+
+
+-- 2. INSERTAR USUARIOS (Todos clave '123')
+insert INTO usuarios (nombre, email, password, rol) VALUES 
+-- ADMINISTRADORES (2)
+('Director Académico', 'director@upla.edu.pe', '123', 'admin'),
+('Secretaría General', 'secretaria@upla.edu.pe', '123', 'admin'),
+
+-- DOCENTES (3)
+('Ing. Carlos Paredes', 'carlos.paredes@upla.edu.pe', '123', 'docente'),
+('Dra. Ana Torres',     'ana.torres@upla.edu.pe',     '123', 'docente'),
+('Mg. Luis Cárdenas',   'luis.cardenas@upla.edu.pe',  '123', 'docente'),
+
+-- ESTUDIANTES (3)
+('Juan Quispe',  'juan.quispe@upla.edu.pe',  '123', 'alumno'),
+('María Rojas',  'maria.rojas@upla.edu.pe',  '123', 'alumno'),
+('Pedro Flores', 'pedro.flores@upla.edu.pe', '123', 'alumno');
+
+
+-- 3. INSERTAR TESIS (Asignamos los alumnos a los docentes)
+-- IDs esperados: 
+-- Docentes son ID 3, 4, 5
+-- Alumnos son ID 6, 7, 8
+
+INSERT INTO tesis (titulo, id_alumno, id_jurado, estado, nota) VALUES 
+-- Tesis de Juan (ID 6) revisada por Ing. Carlos (ID 3)
+('Sistema de Control de Inventarios con IA', 6, 3, 'Pendiente', 0),
+
+-- Tesis de María (ID 7) revisada por Dra. Ana (ID 4) - YA CALIFICADA
+('Aplicación Móvil para Turismo en Huancayo', 7, 4, 'Calificado', 18),
+
+-- Tesis de Pedro (ID 8) revisada por Mg. Luis (ID 5)
+('Automatización de Procesos Logísticos Web', 8, 5, 'Pendiente', 0);
+
+-- Verificamos que se guardaron
+SELECT * FROM usuarios;
+SELECT * FROM tesis;
